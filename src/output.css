@@ -8,8 +8,20 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-400: oklch(75% 0.183 55.934);
+    --color-purple-600: oklch(55.8% 0.288 302.321);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+    --text-9xl: 8rem;
+    --text-9xl--line-height: 1;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -168,6 +180,9 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
   .flex {
     display: flex;
   }
@@ -183,11 +198,35 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[461px\] {
+    height: 461px;
+  }
+  .h-\[644px\] {
+    height: 644px;
+  }
+  .w-\[60px\] {
+    width: 60px;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-\[80\%\] {
+    width: 80%;
+  }
   .w-\[211px\] {
     width: 211px;
+  }
+  .w-\[459\] {
+    width: 459;
+  }
+  .w-\[459px\] {
+    width: 459px;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .grow {
+    flex-grow: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -204,6 +243,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
   .rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -214,8 +256,38 @@
   .bg-orange-400 {
     background-color: var(--color-orange-400);
   }
+  .bg-purple-600 {
+    background-color: var(--color-purple-600);
+  }
+  .mask-alpha {
+    mask-mode: alpha;
+  }
   .text-center {
     text-align: center;
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
+  }
+  .text-9xl {
+    font-size: var(--text-9xl);
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   .text-white {
     color: var(--color-white);
@@ -225,6 +297,9 @@
   }
   .opacity-\[0\.4\] {
     opacity: 0.4;
+  }
+  .opacity-\[0\.5\] {
+    opacity: 0.5;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -236,6 +311,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -245,6 +324,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
