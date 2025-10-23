@@ -190,14 +190,8 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
-  }
-  .h-\[40px\] {
-    height: 40px;
   }
   .h-\[60px\] {
     height: 60px;
@@ -220,29 +214,14 @@
   .w-\[211px\] {
     width: 211px;
   }
-  .w-\[459\] {
-    width: 459;
-  }
   .w-\[459px\] {
     width: 459px;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .items-center {
     align-items: center;
-  }
-  .justify-around {
-    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -253,21 +232,11 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
-  .gap-\[20px\] {
-    gap: 20px;
-  }
-  .gap-\[60px\] {
-    gap: 60px;
-  }
   .gap-\[200px\] {
     gap: 200px;
   }
   .rounded-\[20px\] {
     border-radius: 20px;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .bg-orange-400 {
     background-color: var(--color-orange-400);
@@ -275,31 +244,12 @@
   .bg-purple-600 {
     background-color: var(--color-purple-600);
   }
-  .mask-alpha {
-    mask-mode: alpha;
-  }
   .text-center {
     text-align: center;
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
-  }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
-  }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -311,40 +261,21 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-\[0\.4\] {
     opacity: 0.4;
   }
   .opacity-\[0\.5\] {
     opacity: 0.5;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
