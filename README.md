@@ -1,4 +1,4 @@
-# Information:
+# Information 2:
 * **What i use in my project**
 1. html
 2. css
